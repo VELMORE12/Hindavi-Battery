@@ -1,0 +1,348 @@
+/* ===========================
+   HINDAVI BATTERY WEBSITE CSS
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#111;
+    color:white;
+}
+
+/* Header */
+
+header{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background:#000;
+    z-index:1000;
+    box-shadow:0 0 10px rgba(255,193,7,.3);
+}
+
+.container{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    color:#FFC107;
+    font-size:30px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#FFC107;
+}
+
+.callBtn{
+    background:#FFC107;
+    color:black;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+/* Hero */
+
+.hero{
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.8)),
+    url("https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1500&q=80");
+    background-size:cover;
+    background-position:center;
+}
+
+.overlay{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.heroText{
+    text-align:center;
+}
+
+.heroText h1{
+    font-size:65px;
+    color:#FFC107;
+}
+
+.heroText p{
+    font-size:22px;
+    margin-top:15px;
+}
+
+.buttons{
+    margin-top:40px;
+}
+
+.btn{
+    background:#FFC107;
+    color:black;
+    padding:15px 35px;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:bold;
+    margin-right:15px;
+}
+
+.btn2{
+    border:2px solid #FFC107;
+    color:#FFC107;
+    padding:15px 35px;
+    border-radius:40px;
+    text-decoration:none;
+}
+
+/* Services */
+
+#services{
+    padding:90px 8%;
+    background:white;
+    color:black;
+}
+
+#services h2{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:40px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:35px;
+    text-align:center;
+    border-radius:18px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card i{
+    font-size:45px;
+    color:#FFC107;
+}
+
+.card h3{
+    margin-top:20px;
+}
+
+.card p{
+    margin-top:10px;
+    color:#666;
+}
+
+/* About */
+
+#about{
+    padding:90px 8%;
+    background:#111;
+}
+
+.aboutBox{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+}
+
+.aboutBox h2{
+    color:#FFC107;
+    font-size:42px;
+    margin-bottom:30px;
+}
+
+.aboutBox ul{
+    list-style:none;
+}
+
+.aboutBox ul li{
+    margin:15px;
+    font-size:20px;
+}
+
+/* Contact */
+
+#contact{
+    padding:90px 8%;
+    text-align:center;
+    background:#000;
+}
+
+#contact h2{
+    color:#FFC107;
+    font-size:42px;
+}
+
+#contact h3{
+    margin-top:20px;
+    font-size:28px;
+}
+
+#contact p{
+    margin-top:12px;
+    font-size:20px;
+}
+
+/* Footer */
+
+footer{
+    background:#111;
+    text-align:center;
+    padding:20px;
+}
+
+/* Floating Buttons */
+
+.floatingCall{
+
+    position:fixed;
+
+    right:20px;
+
+    bottom:90px;
+
+    width:65px;
+
+    height:65px;
+
+    background:#16a34a;
+
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:25px;
+
+    text-decoration:none;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.3);
+
+}
+
+.floatingWhatsapp{
+
+    position:fixed;
+
+    right:20px;
+
+    bottom:15px;
+
+    width:65px;
+
+    height:65px;
+
+    background:#25D366;
+
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:28px;
+
+    text-decoration:none;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.3);
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.container{
+
+flex-direction:column;
+
+}
+
+nav ul{
+
+margin-top:15px;
+
+}
+
+.heroText h1{
+
+font-size:42px;
+
+}
+
+.heroText p{
+
+font-size:18px;
+
+}
+
+.buttons{
+
+display:flex;
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+.btn,.btn2{
+
+display:block;
+
+margin:0;
+
+}
+
+}
